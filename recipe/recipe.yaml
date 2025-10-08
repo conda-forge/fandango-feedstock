@@ -25,6 +25,10 @@ build:
       - tango_host = fandango.scripts.tango_host:main
       - tango_monitor = fandango.scripts.tango_monitor:main
       - tango_servers = fandango.scripts.tango_servers:main
+      - CopyCatDS = fandango.interface.CopyCatDS:main      
+      - DynamicDS = fandango.device.DynamicDS:main
+      - FolderDS = fandango.device.FolderDS:main
+      - WorkerDS = fandango.device.WorkerDS:main
 
 requirements:
   host:
