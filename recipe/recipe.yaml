@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fandango
-  version: 16.0.3
+  version: "16.0.4"
   python_min: 3.10
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fandango-${{ version }}.tar.gz
-  sha256: 73b59d213db51665869e19677f00547fc389f00ceb6a9d805d8dd9603e516653
+  sha256: 0f358f286354f270b1717f873bd11fbfed8992cf2c36f4e7b8b372797e4cd703
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -25,7 +25,7 @@ build:
       - tango_host = fandango.scripts.tango_host:main
       - tango_monitor = fandango.scripts.tango_monitor:main
       - tango_servers = fandango.scripts.tango_servers:main
-      - CopyCatDS = fandango.interface.CopyCatDS:main      
+      - CopyCatDS = fandango.interface.CopyCatDS:main
       - DynamicDS = fandango.device.DynamicDS:main
       - FolderDS = fandango.device.FolderDS:main
       - WorkerDS = fandango.device.WorkerDS:main
