@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fandango
-  version: "16.1.1"
+  version: "16.1.2"
   python_min: "3.10"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fandango-${{ version }}.tar.gz
-  sha256: 0bf7e29acad354c5e1bbe644863df7189b4e72190dcc0e86661bce601f768d9b
+  sha256: 01d42267b59648c68357236fa30148e09389ace82f207f39870ae9ea7f9547f7
 
 build:
   number: 0
